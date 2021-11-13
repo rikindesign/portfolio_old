@@ -1,0 +1,347 @@
+/* SASS Stylesheet - R & Design 4.0 */
+
+/** Imports **/
+@import variables-mixins
+@import buttons
+@import fonts
+@import navbar
+@import wave
+@import footer
+//@import cursor
+
+/** Main Styling **/
+*
+    text-decoration: none !important
+    outline: none
+
+html
+    overflow-x: hidden !important
+
+body
+    //background-color: $black !important
+    background-color: $white !important
+    overflow-x: hidden !important
+    box-sizing: border-box
+
+    //background-image: url('assets/images/Background.jpg')
+    //background-repeat: no-repeat
+    //background-size: 100%
+    //background-color: $black
+    //cursor: none !important
+
+    .spacer
+        height: $spacing-s
+
+    img
+        +border-radius($radius-20)
+        //box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
+
+        #background
+            width: 100%
+            top: $spacing-none
+            z-index: 1
+            //display: block
+            //margin-left: auto
+            //margin-right: auto
+            background-attachment: fixed
+
+    button.primary
+        font-family: $font
+        font-size: $regular + 1
+        font-weight: $weight-regular-alt
+        color: $alt-black
+        //cursor: none
+
+        button:focus
+            outline: 0
+
+        //background-color: $blue-light
+        //border: 0px
+        //+border-radius($radius-48)
+
+        background-color: transparent
+        border: solid 2px $alt-black
+        +border-radius($radius-48) //+border-radius($radius-16)
+
+        height: 56px
+        width: 144px
+        padding-left: $spacing-m
+        padding-right: $spacing-m
+        margin-right: $spacing-xs
+        transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+        a
+            color: $white
+            //cursor: none
+            
+    button.primary:hover
+        color: $white
+        background-color: $alt-black //$purple-light
+        transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+    //.header-animation
+        background: linear-gradient(0.25turn, #151515 0%, #3f383894 100%)
+        //background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
+        background-size: 200% auto
+  
+        color: #000
+        background-clip: text
+        text-fill-color: transparent
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+  
+        animation: shine 8s linear infinite
+        @keyframes shine
+            to
+                background-position: 200% center
+
+// Sections        
+section#one
+    height: 100vh
+    width: 100%
+    transition: transform 0.45s ease-out
+    will-change: transform
+
+    background-color: $alt-black
+
+    //background-image: url('assets/images/Background.jpg')
+    //background-repeat: no-repeat
+    //background-size: cover
+    //transition: skew 0.5s
+
+    margin-bottom: 2 * $spacing-xl
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+    h1#title-one
+        color: $white //$alt-white
+        font-family: $font
+        font-weight: $weight-bold !important
+        //-webkit-text-stroke: 2px red
+        //text-stroke: 2px red      
+        line-height: 1.04
+        text-align: center //left
+        transition: transform 0.1s ease-out
+        will-change: transform
+
+        position: relative
+        width: 100%
+
+        //top: 40%
+        left: 50%
+        transform: translate(-50%, -50%) !important
+        z-index: 20
+
+    #myVideo
+        z-index: 1
+        position: relative
+        //width: 100vws
+        height: 100vh
+        width: 100%
+        object-fit: cover
+        overflow-x: hidden
+    
+    #landing-description
+        z-index: 99999
+        position: absolute
+        color: $white //$alt-white
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-regular
+        text-align: center //left
+
+        position: absolute
+        top: 40%    
+        left: 50%
+        transform: translate(-50%, -50%)
+        mix-blend-mode: difference
+        
+        //padding-top: $spacing-none
+
+        /** h4
+            font-size: $large
+            color: $orange-light
+            margin-top: 38% **/
+
+        img
+            height: 32%
+            //width: 200px
+            margin-top: 32%
+            margin-bottom: 0
+
+        h1
+            font-size: $mega
+            margin-top: $spacing-xl
+        
+        p
+            font-weight: $weight-regular-alt
+            font-size: $medium
+
+
+
+
+section#two, section#three, section#four, section#five
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
+    //transition: skew 0.5s
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+        /** #cs1
+            background: -webkit-linear-gradient(1turn,#3C9D82 0%, #BCE26F 42%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent **/
+
+    img
+        width: 100%
+        +border-radius($radius-20)
+        vertical-align: middle
+        transition: 0.18s cubic-bezier(.77,0,.64,1)
+        //box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
+
+    .title
+        color: $black //$white
+        font-size: $title
+        font-family: $font
+        font-weight: $weight-bold
+        //stroke: 1px solid $alt-black
+
+        padding-top: $spacing-l
+
+        svg
+            display: inline-flex
+            align-self: center
+            padding-bottom: 10px
+
+            height: 1em
+            width: 1em
+
+    .large
+        color: $black //$gray-light $white
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-medium
+
+        padding-top: $spacing-none
+
+    .large-thin
+        color: $black //$gray-light $white
+        font-size: $regular + 3
+        font-family: $font
+        font-weight: $weight-regular
+
+        padding-top: $spacing-none
+
+    .regular
+        color: $black //$gray-light
+        font-size: $regular
+        font-family: $font
+        font-weight: $weight-regular
+
+        padding-top: $spacing-m
+
+    .button-group
+        padding-top: $spacing-l
+
+        button.secondary
+            font-family: $font
+            font-size: $regular - 1
+            font-weight: $weight-regular
+            //cursor: none
+
+            background-color: transparent
+            border: solid 2px $gray-light
+            +border-radius($radius-16)
+
+            height: 56px
+            padding-left: $spacing-m
+            padding-right: $spacing-m
+            transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+            a
+                //cursor: none
+                color: $gray-light
+                transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+            /** a:hover
+                //cursor: none
+                color: $black
+                transition: 0.18s cubic-bezier(.77,0,.64,1) **/
+
+        button.secondary:hover
+            border: solid 2px #dedede
+            +border-radius($radius-16)
+            transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+            margin-left: $spacing-s
+
+section#two, section#four, section#five
+    margin-top: 2 * $spacing-xl
+    
+section#three, section#portfolio
+    margin-bottom: 2 * $spacing-xl
+
+section#portion-end
+    .container
+        text-align: center
+        margin-bottom: $spacing-xl / 1.2
+        opacity: 42%
+
+// Media Queries
+@media screen and ( max-width: 1024px )
+    section#one
+        height: 100vh
+        //padding-top: 18%
+        //background-image: url('assets/images/Background Tablet.jpg')
+
+        #landing-description
+            img
+                margin-top: 28%
+
+            h1
+                font-size: $mega
+                margin-top: $spacing-xl
+        
+            p
+                font-size: $medium
+                margin-top: -12px
+
+    section#two, section#three, section#four, section#five
+
+        .title
+            svg
+                display: inline-flex
+                align-self: center
+                padding-bottom: 4px
+
+@media screen and ( max-width: 767px )
+    section#one
+        height: 100vh
+        //padding-top: 24%
+        //background-image: url('assets/images/Background Mobile.jpg')
+
+        #landing-description
+            img
+                margin-top: 42%
+
+            h1
+                font-size: $mega
+                margin-top: $spacing-xl
+        
+            p
+                font-size: $medium
+                margin-top: -12px
+ 
+// Blur Support
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))
+    .modal //Change this
+        -webkit-backdrop-filter: blur(20px)
+        backdrop-filter: blur(20px)
+        background-color: rgba(26, 26, 26, 0.92)
+    .warning //Change this
+        display: none

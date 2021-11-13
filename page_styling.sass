@@ -1,0 +1,388 @@
+/* SASS Stylesheet - R & Design 4.0 */
+
+/** Imports **/
+@import variables-mixins
+@import buttons
+@import fonts
+@import navbar
+@import wave
+@import footer
+
+/** Main Styling **/
+*
+    text-decoration: none !important
+    outline: none
+
+html
+    overflow-x: hidden !important
+
+body
+    background-color: $white !important
+    overflow-x: hidden !important
+    box-sizing: border-box
+    //cursor: none !important
+
+    img.cover
+        width: 100vw
+        //margin-bottom: $spacing-xl
+        +border-radius($radius-0)
+
+    /** #banner-image
+        margin-bottom: 1.6 * $spacing-xl **/
+
+    #banner-title
+        margin-bottom: $spacing-l
+
+    #banner-text
+        padding-top: $spacing-none !important
+        //margin-bottom: 1.6 * $spacing-xl
+
+    //.phrase
+        //background: linear-gradient(0.4turn, rgb(153, 210, 98)  0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
+        //background-size: 200% auto
+  
+        //color: #000
+        //background-clip: text
+        //text-fill-color: transparent
+        //-webkit-background-clip: text
+        //-webkit-text-fill-color: transparent
+  
+        //animation: shine 1.2s linear infinite
+        
+        //@keyframes shine
+        //    to
+        //        background-position: 200% center
+
+        //transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+    button.primary
+        font-family: $font
+        font-weight: $weight-medium
+        color: $white
+        //cursor: none
+
+        button:focus
+            outline: 0
+
+        background-color: $blue-light
+        border: 0px
+        +border-radius($radius-16)
+
+        height: 48px
+        padding-left: $spacing-m
+        padding-right: $spacing-m
+        margin-right: $spacing-xs
+        transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+        a
+            color: $white
+            //cursor: none
+            
+    button.primary:hover
+        background-color: $purple-light
+        transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+    .mega
+        color: $black //$white
+        font-size: $mega
+        font-family: $font
+        font-weight: $weight-bold
+
+    .title
+        color: $black //$white
+        font-size: $title
+        font-family: $font
+        font-weight: $weight-bold
+
+        padding-top: $spacing-l
+
+    .large
+        color: $black //$white
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-medium
+        //padding-top: $spacing-none
+
+    .large-bold
+        color: $black
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-semibold
+        padding-bottom: $spacing-s
+        //padding-top: $spacing-none
+
+    .regular-bold
+        color: $black
+        font-size: 24px
+        font-family: $font
+        font-weight: $weight-bold
+
+        //padding-top: $spacing-m
+
+    .regular
+        color: $black
+        font-size: $regular + 2
+        font-family: $font
+        font-weight: $weight-regular
+        //padding-top: $spacing-m
+
+    .subtitle
+        color: $black
+        font-size: $subtitle
+        font-family: $font
+        font-weight: $weight-bold
+
+        //padding-top: $spacing-m
+
+// Sections     
+/** section#top-background
+    height: 64vh
+    top: 0
+    position: relative
+    z-index: 1 **/
+
+section#portion
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
+    z-index: 0
+
+    margin-top: 2 * $spacing-xl
+    margin-bottom: 2 * $spacing-xl
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+        #container-one, #container-two
+            display: flex
+            justify-content: space-around
+
+    .about-links
+        height: 50vh !important
+
+    .project-details
+        display: flex
+        justify-content: space-around
+        margin-top: 1.48 * $spacing-xl
+
+        .project-info
+            width: 33.33%
+            //display: flex
+            //justify-content: space-around
+
+    .about-details
+        display: flex
+        justify-content: center !important
+
+        .about-info
+            width: 50%
+            padding-bottom: $spacing-s
+            //display: flex
+            //justify-content: space-around
+
+            svg
+                width: 100%
+
+            /** .about-link
+                transition: 0.18s cubic-bezier(.77,0,.64,1) **/
+
+            /** .about-link-1:hover
+                border: 2px #0A66C2 solid
+                transition: 0.18s cubic-bezier(.3,.01,.25,1) **/
+
+
+
+section#portion-alt
+    height: 312px
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
+    z-index: 0
+
+    margin-top: 2 * $spacing-xl
+
+    .top-section
+        margin-top: 0px
+        //margin-bottom: $spacing-xl
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+        #banner-title
+            //margin-top: 10vh
+            text-align: center
+        
+        .highlight-1
+            color: $orange-light
+
+            //background: -webkit-linear-gradient(1turn,#E46E2B 0%, #DAAF20 72%)
+            //-webkit-background-clip: text
+            //-webkit-text-fill-color: transparent
+
+        .highlight-2
+            color: $blue-alt-light
+            
+            //background: -webkit-linear-gradient(1turn,#5359EA 0%, #0094FF 72%)
+            //-webkit-background-clip: text
+            //-webkit-text-fill-color: transparent
+
+        .highlight-3
+            color: $blue-alt-light
+            //background: -webkit-linear-gradient(1turn,#24BC8E 0%, #87be18 48%)
+            //-webkit-background-clip: text
+            //-webkit-text-fill-color: transparent
+
+        .highlight-4
+            background: -webkit-linear-gradient(1turn,#E46E2B 0%, #DAAF20 72%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+section#portion-case-study
+    width: 100vw
+    margin-top: $spacing-xl
+    margin-bottom: 2 * $spacing-xl
+    transition: transform 0.45s ease-out
+    will-change: transform
+    z-index: 0
+
+    .container
+        padding-left: min(4em, 2.4vw)
+        padding-right: min(4em, 2.4vw)
+        //padding-left: min(8em, 6.4vw)
+        //padding-right: min(8em, 6.4vw)
+
+        .centered
+            text-align: center
+
+        video
+            width: 100%
+            margin-left: auto
+            margin-right: auto
+            display: block
+            
+            +border-radius($radius-16)
+    
+    #container-text
+        padding-left: 12.8%
+        padding-right: 12.8%
+        margin-bottom: $spacing-l
+
+    #case-study-container
+        display: flex
+        justify-content: space-around
+
+        .case-study-title
+            width: 28%
+
+        .case-study-content
+            width: 72%
+
+    img
+        width: 100%
+        vertical-align: middle
+        margin-top: $spacing-l
+        //margin-bottom: $spacing-xl
+        +border-radius($radius-16)
+
+        transition: 0.18s cubic-bezier(.77,0,.64,1)
+        //box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
+            
+
+    .button-group
+        padding-top: $spacing-l
+
+        button.secondary
+            font-family: $font
+            font-weight: $weight-regular
+            //cursor: none
+
+            background-color: transparent
+            border: solid 2px $gray-dark
+            +border-radius($radius-16)
+
+            height: 48px
+            padding-left: $spacing-m
+            padding-right: $spacing-m
+            transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+            a
+                //cursor: none
+                color: $gray-dark
+                transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+            a:hover
+                //cursor: none
+                color: $white
+                transition: 0.18s cubic-bezier(.77,0,.64,1)                    
+
+        button.secondary:hover
+            color: $white
+            border: solid 2px $gray-light
+            +border-radius($radius-16)
+            transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+            margin-left: $spacing-s
+
+section#portion-end
+    .container
+        text-align: center
+        margin-bottom: $spacing-xl / 1.2
+        opacity: 42%
+    
+// Media Queries
+@media screen and ( max-width: 1024px )
+    body
+        img
+            margin-bottom: $spacing-none
+
+    section#portion-case-study
+        width: 100vw
+        margin-top: $spacing-xl / 2
+        margin-bottom: $spacing-xl
+
+        /** .container
+            padding-left: min(8em, 6.4vw)
+            padding-right: min(8em, 6.4vw) **/
+    
+        #container-text
+            padding-left: min(8em, 6.4vw)
+            padding-right: min(8em, 6.4vw)
+
+    .project-details
+        display: flex
+        margin-top: 0 !important
+        flex-direction: column
+
+        .project-info
+            width: 100vw !important
+            margin-top: $spacing-l
+            margin-bottom: $spacing-m
+
+    .about-details
+        display: flex
+        flex-direction: column
+
+        .about-info
+            width: 100% !important
+            padding-bottom: $spacing-s !important
+
+            svg
+                width: 100%
+
+    #case-study-container
+        display: flex
+        margin-top: 0 !important
+        flex-direction: column
+        .case-study-title, .case-study-content
+            width: 100% !important
+ 
+// Blur Support
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))
+    .modal //Change this
+        -webkit-backdrop-filter: blur(20px)
+        backdrop-filter: blur(20px)
+        background-color: rgba(26, 26, 26, 0.92)
+    .warning //Change this
+        display: none

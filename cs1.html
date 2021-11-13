@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - ChowTime AR</title>
+    <link rel="icon" type="image/png" href="assets/images/Favicon 2.png">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="page_styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CS1 Specific -->
+    <style>
+        body {
+            background-image: url('assets/images/cs1/Background\ CS1.jpg');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100%;
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156529869-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156529869-1');
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h4> <a href="index.html">Rikin Patel</a> </h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a href="about.html"> About </a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1rltgRLLjK-c6vhMduz71g51fqLIW6Xp6/view?usp=sharing" target="_blank"> Resume </a>
+            </li>
+            <li>
+                <div class="dropdown" id="drop-down-menu">
+                    <button class="btn dropdown-toggle secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="cs1.html">ChowTime AR</a>
+                        <a class="dropdown-item" href="cs2.html">Botler</a>
+                        <a class="dropdown-item" href="cs3.html">Safe@Lab</a>
+                        <a class="dropdown-item" href="cs4.html">UpKeep</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <div class="envelope" data-aos="fade-up" data-aos-duration="1200">
+        <!-- <section id="top-background"></section> -->
+        <section id="portion">
+            <div class="container">
+                <div class="title phrase" id="banner-title">
+                    A new and interactive way to generate smart recipes right from your fridge.
+                </div>
+                <div class="project-details" id="banner-title">
+                    <div class="project-info">
+                        <div class="regular-bold">
+                            Role
+                        </div>
+                        <div class="regular" id="banner-text">
+                            UX / UI Designer
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="regular-bold">
+                            Timeline
+                        </div>
+                        <div class="regular" id="banner-text">
+                            Summer 2020 - Winter 2021
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="regular-bold">
+                            Tools
+                        </div>
+                        <div class="regular" id="banner-text">
+                            Figma, Flowmapp, React Native
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="assets/images/cs1/cs1.png" class="cover" alt="ChowTime AR - Case Study Image" id="banner">
+
+        <!-- Reference container for flexbox -->
+        <!-- <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Context
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        ChowTime was originally a simple mobile application idea I came up with to generate recipes from ingredients in your fridge. However, the current experience was lacklustre and desperately needed a redesign.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Built in React Native, ChowTime works by taking a picture of your fridge or single ingredients and produces recipes based on the type and quantity of ingredients. We wanted to revamp the ingredient adding and recipe viewing experiences.
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Context
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        ChowTime was originally a simple mobile application idea I came up with to generate recipes from ingredients in your fridge. However, the current experience was lacklustre and desperately needed a redesign.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Built in React Native, the old ChowTime worked by taking a picture of ingredients to produce recipes based on the type and quantity of ingredients. We wanted to revamp the ingredient adding and recipe viewing experiences, and made ChowTime AR which uses
+                        a live AR view to quickly add ingredients to generate recipes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Previously ...
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        ChowTime had an outdated and unintuitive UI. Below are examples of using the camera features to 'scan' and add ingredients.
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container">
+                <img src="assets/images/cs1/Old ChowTime AR.gif" alt="Old ChowTime">
+            </div> -->
+            <div class="container">
+                <video src="assets/images/cs1/Old ChowTime.mp4" controls></video>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Quick User Interviews
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        We spoke with 4 users who used ChowTime recently to see how they felt when using the app. From the preliminary research, all 4 users said they disliked the current processes for adding ingredients. 2 of them said they wouldn't use it again because of
+                        long it would take.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 1.jpg" alt="User Feedback">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Action Words
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        During each interview session, I kept hearing similar words and phrases being thrown around. I noted them down to better understand process terms, pain points, and opinions to create a word cloud.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 19.jpg" alt="Action Words">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Problem
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Designing this experience required understanding the needs of potential users, mapping interactions through user flows, and looking into other image-recognition apps. By analyzing the feedback from users of the current ChowTime app, we ran into the following
+                        issues. </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>Outdated user interface</li>
+                            <div class="spacer"></div>
+                            <li>Cumbersome ingredient scanning process (lot's of back and forth)</li>
+                            <div class="spacer"></div>
+                            <li>Incorrect ingredients being added often (#1 problem)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Goal
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Ingredient scanning with a live camera view was an idea we had from the beginning but never implemented. With this in mind, I wanted to explore how Augmented Reality (AR) technology could ease the 3 pain points mentioned above. Since I had never designed
+                        for AR experiences, there was a lot to research and many things to explore.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 2.jpg" alt="Goal">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Brief
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        User Needs
+                    </div>
+                    <div class="regular">
+                        These key feature wishes were real sentences spoken by the users based on their pain points. Our team needed to consider how we could address some of these wishes using AR.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>"I want my phone to identify ingredients for me"</li>
+                            <li>"I want to avoid taking pictures of food objects"</li>
+                            <li>"I want to add many ingredients in one step instead of just one"</li>
+                            <li>"I want precise control over ingredient quantity"</li>
+                        </ol>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="large-bold">
+                        Design Focus
+                    </div>
+                    <div class="regular">
+                        I then realigned myself and the team on key goals for version 2 of ChowTime. This direction was determined based on user feedback and team motivation. We wanted a greater focus on AR and its possibilities within ChowTime.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 3.jpg" alt="Design Focus">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    How do we design for AR?
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Principles
+                    </div>
+                    <div class="regular">
+                        I wanted to be mindful of best practices when designing for AR and decided to follow these key principles. We consider the following. Designing for AR means
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <em>"... designing for digital elements to appear over real-world views, sometimes with limited interactivity between them."</em> — <a href="https://www.interaction-design.org/literature/topics/augmented-reality"> Interaction Design Foundation </a>
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>Safety — We don't want to distract or mislead a user into danger.</li>
+                            <li>Overkill — We don't want the user to experience cognitive overload.</li>
+                            <li>Environment — We need to design a dynamic experience.</li>
+                            <li>Comfort — We make comfortable designs to prevent physical strains.</li>
+                            <li>Security — We must ensure that camera permissions are considered</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Exploring AR Apps
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        In addition to conceptual research, I also investigated many other AR applications (from Pokemon GO to Measure by Apple and some Dribbble concepts) to understand how they handle interactions and onboarding.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        All of the designs and applications I had explored had a minimal amount of controls on screen with tutorials on how to use key features. In addition, interactions with onscreen items were very fast and simple. Onboarding was essential since we need a
+                        way to transition current and new users.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 4.jpg" alt="Exploring AR Apps, Measure, Pokemon GO">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    How can we use AR?
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        With the research and key learnings found, I had the following goals in mind when implementing these AR features. These also take into account the 4 ideas mentioned in the brief.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>I want to use the AR Camera feature to identify items</li>
+                            <li>I want to add many ingredients at once instead of taking pictures</li>
+                            <li>I want to adjust the quantity of all of my ingredients in one place</li>
+                        </ol>
+                    </div>
+                    <br>
+                    <div class="regular">
+                        The first idea I had was to incorporate <em>'Ingredient Tags.'</em> Hovering over items helps the camera recognize ingredients and food items marked with small tags. Clicking on these ingredient tags allows the user to view and
+                        add the item to their list. The user could also adjust the quantity of their ingredients at once.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    User Flows
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        I mapped out some sample user flows. These flows gave our team a better picture, and allowed us to consider key edge cases like accepting camera and microphone permissions. The process was kept very simple to make it scalable, or in the case of any new
+                        additions.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 5.jpg" alt="User Flow Full">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 6.jpg" alt="User Flow Camera">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Information Architecture
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 22.jpg" alt="Information Architecture">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Wireframing
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Wireframing for the camera view was quite confusing at first. I wasn't sure where to place the buttons, or how to simplify the actions item on screen at first.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Version 1 — The idea here was to tap each ingredient as you see them. Untapped ingredients however, would linger and take up unnecessary space on the screen.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Version 2 — I alleviated the screen real-estate issue by having a minimized state for each tag. That way, adding an ingredient would have you tap once to maximize the tag, and tap again to add it. The added ingredient would have check mark on the minimized
+                        tag to help the user differentiate between already added food items.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 7.jpg" alt="Wireframe, AR View">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 8.jpg" alt="Wireframe, Onboarding">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Hi-Fi Support
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        I created a style guide and component sheet to support the creation of the high-fidelity designs for consistency and scalability. These became incredibly handy when creating designs that were modular. Building ChowTime AR out this way also eased developer
+                        hand-off, since they could make components and CSS variables quickly.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 9.jpg" alt="Style Sheet">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 10.jpg" alt="Component Sheet">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Hi-Fi Version 1
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Onboarding — Guiding you through ChowTime AR.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Homescreen — Viewing generated recipes and recommendations.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Starred Recipes — Starring important recipes for you to view for later.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        AR Experience — The new way to quickly view and add ingredients.
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 14.jpg" alt="Hi-Fi V1 Onboarding">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 15.jpg" alt="Hi-Fi V1 Home and Recipes">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 16.jpg" alt="Hi-Fi V1 AR Tutorial">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 17.jpg" alt="Hi-Fi V1 AR Camera">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Usability Testing
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        User Thoughts
+                    </div>
+                    <div class="regular">
+                        We tested the current prototype as a Figma prototype with the 4 previous users and realized the users used our application in a different way then intended. Users ...
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>Appreciated the tutorial process ✅</li>
+                            <li>Almost always added 1 ingredient at a time❗️</li>
+                            <li>Were always close up to the ingredient❗️</li>
+                        </ol>
+                    </div>
+                    <div class="regular">
+                        In general, users found the two step adding process annoying after adding many ingredients. Many added ingredients were added on accident just to test the system and wanted to remove them without having to click finish.
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="large-bold">
+                        Takeaways
+                    </div>
+                    <div class="regular">
+                        Our tag system needs to be changed. Users require full control of adding, dropping, and viewing ingredients. To fix these issues, I wanted to ...
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>Adding ingredients as they are scanned (automatically)</li>
+                            <li>Make an item tray to showcase current ingredients added</li>
+                            <li>Rethink the tag system and reduce it to something less busy</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Hi-Fi Version 2
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Key Decisions
+                    </div>
+                    <div class="regular">
+                        Crosshairs and a bounding box — Thereby increasing precision while scanning items (No tap ingredient adding process)
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Identification Confirmation — Showing the name of the ingredient within the box and providing confirmation of it being added after it has been identified
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Ingredient Drawer — Adding an ingredients drawer and combining it with the counter to check items at all times
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Finish Button — Moving the finishing step to the ingredients drawer to mitigate mistakes while being at the bottom of the container.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Homescreen — Redesigned the homescreen to be more intuitive to navigate around.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 11.jpg" alt="Hi-Fi V2 Key Screens">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 12.jpg" alt="Hi-Fi V2 Onboarding">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 13.jpg" alt="Hi-Fi V2 AR Camera">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 21.jpg" alt="Before and After">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Action Words (Again!)
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        To top it all off, we showed the new designs to the 4 previous users. I noted down their most common phrases again, and there was a stark difference. I was very suprised to see that the most common word changed from 'Mistakes' to 'Intuitive'. Suprisingly,
+                        many people mentioned wanting to scan their whole fridge! Maybe this could be a next step.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 20.jpg" alt="User Feedback">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="container-text">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Reflection
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Learnings
+                    </div>
+                    <div class="regular">
+                        Augmented Reality ended up being an excellent solution for each of the previous problems our users faced. It improved the ingredient adding process and made it more fun and interactive.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        ChowTime AR was VERY hard to user test in a real AR setting. Figma and Maze were two limited options, and often took the user out of the AR setting. Some "tacky" options I could use in the future are either GoPro VR Player, or test the developed app itself.
+                        In addition ...
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ul>
+                            <li>I had to add a dark transparent layer beneath the AR items so they would be more visible (higher contrast)</li>
+                        </ul>
+                        <ul>
+                            <li>Sometimes when users would go close to the item, the other items would be out of view. It would be nice if ChowTime could remember these out-of-view items (having an indicator for out-of-view items)</li>
+                        </ul>
+                        <ul>
+                            <li>Transferring the "ingredients addition" process into an AR view helped speed up the ingredient adding process while allowing the user to be more immersed</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="large-bold">
+                        Next Steps
+                    </div>
+                    <div class="regular">
+                        <ul>
+                            <li>Test on more users (with more age variety and smartphone experiences) to help us understand use-cases and patterns better</li>
+                        </ul>
+                        <ul>
+                            <li>To prevent mistakes, we may consider adding a “hold to add” button on the ingredient after it has been identified instead of adding it right away</li>
+                        </ul>
+                        <ul>
+                            <li>Try to use ARKit for the next version for testing and implementation using better staging practices on the development side</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <a href="https://www.figma.com/file/PWQpltzagoIDFu8WS37CzY/ChowTime-AR-2021-Preview?node-id=0%3A1">Final Figma Frames</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs1/Image 18.jpg" alt="Thank you for reading">
+            </div>
+        </section>
+
+        <!-- <section id="portion-end">
+            <div class="container">
+                <div class="regular">
+                    Made from scratch by me 😛
+                </div>
+            </div>
+        </section> -->
+    </div>
+</body>
+
+<!-- Cursor Views -->
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+
+<!-- CDN Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    console.log('Initialized')
+</script>
+
+<!-- Local Scripts -->
+<!-- <script src="app.js"></script> -->
+<!-- <script src="vanilla-tilt.min.js">
+    console.log('tilt')
+</script> -->
+<script src="perspective.js"></script>
+<script src="navbar.js"></script>
+
+<!-- Animation Scripts (ScrollMagic + GSAP TweenMax + AOS) -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script> -->
+
+</html>
